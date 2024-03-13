@@ -12,7 +12,7 @@ load_dotenv()
 
 class Bronze:
     def __init__(self):
-        self.basedir = (f"/Users/abhishekteli/Documents/Projects/RealEstate/rawData/"
+        self.basedir = (f"~/Data/rawData/"
                         f"year={date.today().year}/month={date.today().month}/day={date.today().day}/")
 
     def getRequest(self, loca, home_type, current_page=1):
@@ -60,7 +60,7 @@ class Bronze:
 
 if __name__ == "__main__":
     brnz = Bronze()
-    location = ['alpharetta, ga', 'san jose, ca', 'syracuse, ny']
+    location = ['alpharetta, ga', 'san jose, ca', 'syracuse, ny']#sample places !!! We can add more places
     homeType = 'Apartments_Condos_Co-ops'
     for loc in location:
         totalPages = brnz.getTotalPages(loc, homeType)
