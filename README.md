@@ -14,10 +14,10 @@ Here's a breakdown of its core functions:
 **API Interaction (getRequest):** Uses the requests library to fetch data from the Zillow API, handling pagination and ensuring complete data retrieval.
 **Data Storage (extractAndSaveRawData):** Parses and saves the fetched data in JSON format, adhering to a structured file hierarchy based on the extraction date.
 
-**class Bronze:**
-    # Initialization and directory setup
-    # API request handling with error management
-    # Iterative data fetching and storage in JSON format
+class Bronze:
+# Initialization and directory setup
+# API request handling with error management
+# Iterative data fetching and storage in JSON format
     
 **Data Transformation (Gold class)**
 The Gold class processes the raw data using PySpark, performing various transformations to ready the data for analysis and storage:
@@ -31,9 +31,9 @@ Extracts and cleans various components, such as addresses, and computes addition
 Normalizes data values and structures the DataFrame for efficient storage and access.
 
 **class Gold:**
-    # Schema definition for data consistency
-    # Data loading with schema enforcement
-    # Comprehensive data transformation processes
+ # Schema definition for data consistency\n
+ # Data loading with schema enforcement
+ # Comprehensive data transformation processes
     
 **Data Persistence**
 Saving to Files (SaveToFiles class)
