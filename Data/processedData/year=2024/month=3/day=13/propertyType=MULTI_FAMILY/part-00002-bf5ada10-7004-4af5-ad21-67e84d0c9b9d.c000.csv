@@ -1,0 +1,4 @@
+dateSold,lotAreaValue,priceChange,zestimate,initialPrice,bedrooms,longitude,latitude,listingStatus,zpid,rent,daysOnZillow,bathrooms,livingArea,country,currency,lotAreaUnit,hasImage,street,city,state,zip,currentPrice,loadDate
+,6098.0,0.0,1152300.0,1399000,6,-121.8327,37.295326,FOR_SALE,2054291825,4490.0,3,4.0,1958,USA,USD,sqft,true,679-681 Pinto Dr,San Jose,CA,95111,1399000.0,2024-03-13
+,6098.0,0.0,1152300.0,1399000,6,-121.8327,37.295326,FOR_SALE,2054291825,4490.0,3,4.0,1958,USA,USD,sqft,true,679-681 Pinto Dr,San Jose,CA,95111,1399000.0,2024-03-13
+,6098.0,0.0,1152300.0,1399000,6,-121.8327,37.295326,FOR_SALE,2054291825,4490.0,3,4.0,1958,USA,USD,sqft,true,679-681 Pinto Dr,San Jose,CA,95111,1399000.0,2024-03-13
