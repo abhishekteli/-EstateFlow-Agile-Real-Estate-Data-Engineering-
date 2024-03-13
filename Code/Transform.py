@@ -67,7 +67,7 @@ class Gold:
             .drop('variableData', 'contingentListingType', 'listingSubType')
         )
 
-    def transformData(self, realEstateDF):
+    def transformData(self, realEstateDF, pipeline='stream'):
 
         realEstateDF = realEstateDF.withColumn('street', split(col('address'),',')[0].cast('string')) \
                                     .withColumn('city', split(col('address'),',')[1].cast('string')) \
@@ -85,12 +85,13 @@ class Gold:
         realEstateDF = realEstateDF.withColumn('lotAreaValue', when(realEstateDF.lotAreaValue < 1, 0)\
                                                .otherwise(realEstateDF.lotAreaValue))
 
-        # realEstateDF = realEstateDF.withColumn('street', when((col('state').isNull()) & (col('city').isNull()),
-        #                                                       concat(col('street'), col('city')))\
-        #                                        .otherwise(col('street'))) \
-        #                             .withColumn('city', regexp_extract(input_file_name(),".*/(.+?),",1)) \
-        #                             .withColumn('state', regexp_extract(input_file_name(), ",%20([a-z]{2})", 1)) \
-        #                             .withColumn('city', regexp_replace(col('city'), "%20", ' '))
+        if pipeline == 'batch':
+            realEstateDF = realEstateDF.withColumn('street', when((col('state').isNull()) & (col('city').isNull()),
+                                                                  concat(col('street'), col('city')))\
+                                                   .otherwise(col('street'))) \
+                                        .withColumn('city', regexp_extract(input_file_name(),".*/(.+?),",1)) \
+                                        .withColumn('state', regexp_extract(input_file_name(), ",%20([a-z]{2})", 1)) \
+                                        .withColumn('city', regexp_replace(col('city'), "%20", ' '))
 
         realEstateDF = realEstateDF.withColumn("loadDate", current_date()).drop('variableData','imgSrc', 'detailUrl',
                                                                                 'contingentListingType'
@@ -101,6 +102,6 @@ class Gold:
     def processData(self):
         rawDF = self.getData()
         rawDF.show()
-        realEstateDF = self.transformData(rawDF)
+        realEstateDF = self.transformData(rawDF, 'batch')
         return realEstateDF
 
