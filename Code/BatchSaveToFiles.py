@@ -6,7 +6,7 @@ import time
 class SaveToFiles:
 
     def __init__(self):
-        self.basedir_files = (f"/Users/abhishekteli/Documents/Projects/RealEstate/processedData/"
+        self.basedir_files = (f"~/Data/processedData/"
                               f"year={date.today().year}/month={date.today().month}/day={date.today().day}/")
 
     def saveDataToFiles(self, realEstateDF):
