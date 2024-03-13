@@ -98,7 +98,7 @@ class streamingGold:
         gd = Gold()
         kafka_df = self.readData()
         parsed_df = self.getRealEstateData(kafka_df)
-        transformedDF = gd.transformData(parsed_df)
+        transformedDF = gd.transformData(parsed_df, 'stream')
         sQuery = self.writeToDatabase(transformedDF)
         return sQuery
 
