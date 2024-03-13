@@ -9,7 +9,7 @@ logging.getLogger('py4j').setLevel(logging.ERROR)
 class Gold:
 
     def __init__(self):
-        self.basedir_load = (f"/Users/abhishekteli/Documents/Projects/RealEstate/rawData/"
+        self.basedir_load = (f"~/Data/rawData/"
                         f"year={date.today().year}/month={date.today().month}/day={date.today().day}/")
 
         self.spark = SparkSession \
