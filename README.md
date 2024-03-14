@@ -22,27 +22,3 @@ Describes how transformed data is persisted:
 Illustrates how Apache Airflow orchestrates the execution of batch processing tasks within this phase.
 
 <img width="973" alt="Screenshot 2024-03-13 at 10 08 06 PM" src="https://github.com/abhishekteli/-EstateFlow-Agile-Real-Estate-Data-Engineering-/assets/26431142/025bccea-90a0-4cb1-8016-513cd290fda5">
-
-
-
-## Phase 2: Real-Time Data Processing
-
-### Stream Extraction (streamingBronze class)
-Explains the operation of the streamingBronze class for real-time data extraction from the Zillow API and streaming into Kafka.
-
-### Stream Transformation and Load (streamingGold class)
-Describes how the streamingGold class consumes Kafka data, applies transformations, and loads it into PostgreSQL for real-time analysis.
-
-### Integration and Workflow
-Outlines the workflow integrating real-time data capture, processing, and user interaction for timely insights into the real estate market.
-
-## Phase 3: Future Enhancements
-
-### Advanced House Price Valuation
-Describes the planned integration of a predictive model for property valuation to provide market trend insights and investment guidance.
-
-### AI-Driven Real Estate Chatbot
-Details the development of an AI-powered chatbot to offer an interactive platform for users to query real estate data.
-
-## Conclusion
-Summarizes the project's current achievements and future roadmap, emphasizing the envisioned enhancements to transform the data pipeline into a comprehensive analytical tool.
