@@ -25,4 +25,5 @@ The SaveToDatabase class focuses on persisting transformed data to a PostgreSQL 
 #### Airflow Orchestration
 While specific Airflow code is not provided, Apache Airflow can be used to orchestrate these batch processing tasks. **Airflow DAGs** (Directed Acyclic Graphs) would be configured to manage dependencies and execution order, starting with data extraction **(Bronze)**, followed by transformation **(Gold)**, and then persistence through file saving **(SaveToFiles)** and database insertion **(SaveToDatabase)**. Each task would be represented as a node in the DAG, with edges defining their execution sequence, ensuring the entire pipeline is executed smoothly and efficiently.
 
-<img width="973" alt="Screenshot 2024-03-13 at 10 08 06 PM" src="https://github.com/abhishekteli/-EstateFlow-Agile-Real-Estate-Data-Engineering-/assets/26431142/025bccea-90a0-4cb1-8016-513cd290fda5">
+<img width="973" alt="Screenshot 2024-03-13 at 10 22 20 PM" src="https://github.com/abhishekteli/Real-Estate-Data-Pipeline-Batch/assets/26431142/45da5718-53d2-44f4-b576-90ab7b5c8f12">
+
