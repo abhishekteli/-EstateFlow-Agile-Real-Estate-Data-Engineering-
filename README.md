@@ -1,6 +1,6 @@
 ## Real Estate Data Pipeline
 
-**Phase 1: Real Estate Batch Processing**
+# Phase 1: Real Estate Batch Processing**
 Introduction
 This section provides an in-depth overview of Phase 1, focusing on batch processing of real estate data from Zillow's API using Python, PySpark, PostgreSQL, and orchestrated with Apache Airflow.
 
