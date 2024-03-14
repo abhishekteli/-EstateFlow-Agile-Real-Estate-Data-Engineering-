@@ -21,6 +21,10 @@ Describes how transformed data is persisted:
 ### Airflow Orchestration
 Illustrates how Apache Airflow orchestrates the execution of batch processing tasks within this phase.
 
+<img width="973" alt="Screenshot 2024-03-13 at 10 08 06 PM" src="https://github.com/abhishekteli/-EstateFlow-Agile-Real-Estate-Data-Engineering-/assets/26431142/025bccea-90a0-4cb1-8016-513cd290fda5">
+
+
+
 ## Phase 2: Real-Time Data Processing
 
 ### Stream Extraction (streamingBronze class)
