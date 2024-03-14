@@ -1,21 +1,6 @@
 Real Estate Data Pipeline
-Table of Contents
-Phase 1: Real Estate Batch Processing
-Introduction
-System Architecture
-Data Extraction (Bronze class)
-Data Transformation (Gold class)
-Data Persistence
-Airflow Orchestration
-Phase 2: Real-Time Data Processing
-Stream Extraction (streamingBronze class)
-Stream Transformation and Load (streamingGold class)
-Integration and Workflow
-Phase 3: Future Enhancements
-Advanced House Price Valuation
-AI-Driven Real Estate Chatbot
-Conclusion
-Phase 1: Real Estate Batch Processing
+
+**Phase 1: Real Estate Batch Processing**
 Introduction
 This section provides an in-depth overview of Phase 1, focusing on batch processing of real estate data from Zillow's API using Python, PySpark, PostgreSQL, and orchestrated with Apache Airflow.
 
